@@ -1,0 +1,17 @@
+const router = require('express').Router()
+const { auth } = require('../middlewares/auth.cjs')
+const { getProducts, getProduct, getAds, addReview, removeLike, addLike, placeOrder, getOrders, cancelOrder, getSearch, setComplete, getRewards } = require('../controllers/product.controller.cjs')
+
+router.get('/getProducts/:category', getProducts)
+router.get('/getProduct/:productId', auth, getProduct)
+router.get('/ads', getAds)
+router.post('/review', auth, addReview)
+router.put('/review/addLike/:reviewId', auth, addLike)
+router.put('/review/removeLike/:reviewId', auth, removeLike)
+router.post('/order', auth, placeOrder)
+router.get('/order', auth, getOrders)
+router.delete('/order/:orderId', auth, cancelOrder)
+router.get('/search/:search', auth, getSearch)
+router.put('/reward/complete/:rewardId', auth, setComplete)
+router.get('/reward', auth, getRewards)
+module.exports = router
