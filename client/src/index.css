@@ -1,0 +1,12 @@
+#root {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    user-select: none;
+}
+
+.svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
