@@ -1,24 +1,41 @@
-# Logs
-/server/logs
-/server/*.log
-/server/npm-debug.log*
-/server/yarn-debug.log*
-/server/yarn-error.log*
-/server/pnpm-debug.log*
-/server/lerna-debug.log*
-/server/node_modules
-/server/dist
-/server/dist-ssr
-/server/*.local
-/server/# Editor directories and files
-/server/.vscode/*
-/server/!.vscode/extensions.json
-/server/.idea
-/server/.DS_Store
-/server/*.suo
-/server/*.ntvs*
-/server/*.njsproj
-/server/*.sln
-/server/*.sw?
-/server/.env
-/server/.vercel
+# Ignore Vercel logs
+.vercel
+
+# Ignore .env files which may contain sensitive information
+.env*
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+/build
+
+# Ignore yarn.lock file (if using Yarn)
+yarn.lock
+
+# Ignore npm's lock files
+package-lock.json
+npm-shrinkwrap.json
+
+# Ignore any local configuration files
+*.config.js
+
+# Ignore IDE/Editor specific files
+.vscode/
+*.idea/
+
+# Ignore OS generated files
+.DS_Store
+
+# Ignore any backup files
+*~
+
+# Ignore logs and runtime data
+*.log
+*.pid
+
+# Ignore coverage output
+coverage/
+
+# Ignore any other generated files or folders
+# Add specific files or directories as per your project needs
