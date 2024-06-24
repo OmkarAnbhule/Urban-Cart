@@ -38,7 +38,7 @@ export default function Footer() {
             <h2>Contact Us</h2>
             <div>
                 <i className='bi bi-facebook'></i>
-                <i className='bi bi-github'></i>
+                <i className='bi bi-github'><a href='https://github.com/OmkarAnbhule/Urban-Cart.git'></a></i>
                 <i className='bi bi-linkedin'></i>
                 <i className='bi bi-instagram'></i>
             </div>
