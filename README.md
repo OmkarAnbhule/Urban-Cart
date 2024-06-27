@@ -58,15 +58,15 @@ Replace your_mongodb_uri, your_jwt_secret with your actual MongoDB URI, JWT secr
     node index.cjs
 
 6. **Access Application**
-  Open your web browser and go to http://localhost:3000 to view the application.
+  Open your web browser and go to http://localhost:5173 to view the application.
 
 ## License
   This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgements
-**OpenCV** - for face detection and recognition libraries.
-**React** - for building the frontend user interface.
-**Flask** - for building the backend API.
+**React with Redux** - for building the frontend with state management.
+**Node.js with Express** - for building the backend API.
+*MongoDB** - for database storage (MongoDB Atlas for cloud hosting).
 ## Author
  - Omkar Suresh Anbhule
  - GitHub: https://github.com/OmkarAnbhule
